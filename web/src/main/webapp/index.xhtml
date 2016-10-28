@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div>
+            <h:form>
+                <h:panelGrid columns="2">
+                    
+                    <h:outputText value="Nom"></h:outputText>
+                    <h:inputText value="#{springMBean.personne.nom}"></h:inputText>
+                    
+                    <h:outputText value="Prenom"></h:outputText>
+                    <h:inputText value="#{springMBean.personne.prenom}"></h:inputText>
+                    
+                    <h:outputText value="Adresse"></h:outputText>
+                    <h:inputText  value="#{springMBean.personne.adresse}"></h:inputText>
+                    
+                    <h:outputText value="Date naissance"></h:outputText>
+                    <h:inputText value="#{springMBean.personne.date_naissance}"></h:inputText>
+                    
+                    <h:commandButton label="Valider" value="#{springMBean.addPersonne()}"></h:commandButton>
+                    
+                </h:panelGrid>
+            </h:form>
+
+
+        </div>
+    </body>
+</html>
